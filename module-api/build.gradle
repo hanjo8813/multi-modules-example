@@ -1,7 +1,7 @@
 dependencies {
     // 공통 모듈들의 모든 의존성을 상속받음
-    api project(":module-domain")
-    api project(":module-common")
+    api project(':module-common')
+    api project(':module-domain')
 }
 
 // api 모듈은 실제로 서버가 올라감 -> jar, bootjar 둘다 생성

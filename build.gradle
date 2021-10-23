@@ -9,6 +9,26 @@ plugins {
 //    mavenCentral()
 //}
 
+
+
+//buildscript {
+//    ext {
+//        springBootVersion = '2.5.6'
+//        dependencyManagementVersion = '1.0.11.RELEASE'
+//    }
+//    repositories {
+//        mavenCentral()
+//    }
+//    dependencies {
+//        dependencies {
+//            classpath "org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}"
+//            classpath "io.spring.gradle:dependency-management-plugin:${dependencyManagementVersion}"
+//        }
+//    }
+//}
+
+
+
 // allprojects : root 프로젝트 설정
 allprojects {
     group = 'com.example'
@@ -19,9 +39,12 @@ allprojects {
 subprojects {
     apply {
         plugin('java')
+        plugin('java-library')
         plugin('org.springframework.boot')
         plugin('io.spring.dependency-management')
     }
+
+    sourceCompatibility = "11"
 
     repositories {
         mavenCentral()
@@ -43,3 +66,4 @@ subprojects {
         useJUnitPlatform()
     }
 }
+
