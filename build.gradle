@@ -5,12 +5,17 @@ plugins {
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 }
 
-// root 프로젝트 설정
+//repositories {
+//    mavenCentral()
+//}
+
+// allprojects : root 프로젝트 설정
 allprojects {
     group = 'com.example'
     version = '0.0.1-SNAPSHOT'
 }
 
+// subprojects : 하위 프로젝트 설정
 subprojects {
     apply {
         plugin('java')
@@ -18,19 +23,20 @@ subprojects {
         plugin('io.spring.dependency-management')
     }
 
-
     repositories {
         mavenCentral()
     }
 
-    // 모든 하위 프로젝트에게 부여할 의존성 라이브러리
+    // 모든 하위 프로젝트에게 공통적으로 부여할 의존성 라이브러리
     dependencies {
+        // Lombok
         compileOnly 'org.projectlombok:lombok'
         annotationProcessor 'org.projectlombok:lombok'
+        // Test
         implementation 'org.springframework.boot:spring-boot-starter-test'
     }
 
-    // 테스트 플랫폼 지정정
+    // 테스트 플랫폼 지정
    test {
         useJUnitPlatform()
     }
