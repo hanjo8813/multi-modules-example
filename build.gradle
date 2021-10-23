@@ -29,6 +29,8 @@ subprojects {
 
     // 모든 하위 프로젝트에게 공통적으로 부여할 의존성 라이브러리
     dependencies {
+        // bean validation
+        implementation 'org.springframework.boot:spring-boot-starter-validation'
         // Lombok
         compileOnly 'org.projectlombok:lombok'
         annotationProcessor 'org.projectlombok:lombok'

@@ -1,19 +1,9 @@
-plugins {
-    id 'java'
-}
-
-group 'com.example'
-version '0.0.1-SNAPSHOT'
-
-repositories {
-    mavenCentral()
-}
-
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    // common 모듈의 모든 의존성은 root ->  build.gradle의 subprojects에서 받음
 }
 
-test {
-    useJUnitPlatform()
-}
+// common 모듈 빌드 시 단독으로 실행 가능한 jar 파일으로 만들 필요가 없음
+bootJar { enabled = false }
+
+// 다른 모듈에는 포함되어 빌드되도록
+jar { enabled = true }
