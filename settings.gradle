@@ -4,4 +4,8 @@ include 'module-common'
 include 'module-domain'
 include 'module-admin'
 include 'module-admin'
+include 'moudule-api-a'
+include 'module-api-b'
+include 'module-api-b'
+include 'module-api-a'
 

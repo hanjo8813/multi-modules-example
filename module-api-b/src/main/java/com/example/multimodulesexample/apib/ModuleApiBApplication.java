@@ -1,11 +1,11 @@
-package com.example.multimodulesexample.api;
+package com.example.multimodulesexample.apib;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ModuleApiApplication {
+public class ModuleApiBApplication {
     public static void main(String[] args) {
-        SpringApplication.run(ModuleApiApplication.class, args);
+        SpringApplication.run(ModuleApiBApplication.class, args);
     }
 }
