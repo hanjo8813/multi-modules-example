@@ -1,6 +1,6 @@
 dependencies {
-    api project(':module-common')
-    api project(':module-domain')
+    implementation project(':module-common')
+    implementation project(':module-domain')
 
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 }

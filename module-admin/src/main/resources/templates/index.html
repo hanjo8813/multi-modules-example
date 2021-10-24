@@ -11,7 +11,18 @@
 
 <body>
 
-<h1>테스트</h1>
+<h1>DB 연동 테스트</h1>
+
+<table>
+    <tr>
+        <th>id</th>
+        <th>text</th>
+    </tr>
+    <tr th:each="dummy: ${dummyList}" th:object="${dummy}">
+        <td th:text="*{id}"></td>
+        <td th:text="*{text}"></td>
+    </tr>
+</table>
 
 </body>
 
