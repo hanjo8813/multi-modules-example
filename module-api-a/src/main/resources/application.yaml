@@ -1,3 +1,8 @@
+spring:
+  profiles:
+    include:
+      - domain
+
 server:
   port: 8082
   servlet:
@@ -5,3 +10,21 @@ server:
       charset: UTF-8
       enabled: true
       force: true
+
+
+
+
+#spring:
+#  # MySQL
+#  datasource:
+#    url: jdbc:mysql://localhost/dummy_schema
+#    username: root
+#    password: root1234
+#
+#  jpa:
+#    open-in-view: false
+#    hibernate:
+#      ddl-auto: create  # create or validate
+#    show-sql: true
+#    properties:
+#      hibernate.format_sql: true

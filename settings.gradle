@@ -8,4 +8,5 @@ include 'moudule-api-a'
 include 'module-api-b'
 include 'module-api-b'
 include 'module-api-a'
+include 'module-gateway'
 
