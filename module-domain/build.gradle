@@ -1,5 +1,6 @@
 dependencies {
-    // DB 연결 정보
+    api 'mysql:mysql-connector-java'
+    api 'org.springframework.boot:spring-boot-starter-data-jpa'
 }
 
 bootJar { enabled = false }

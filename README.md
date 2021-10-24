@@ -1,5 +1,5 @@
 # Spring Boot Multi Modules
-> Spring Boot의 기본적인 멀티 모듈 구조 구현
+> Spring Boot의 기본적인 멀티 모듈 템플릿 구현
 
 <br>
 

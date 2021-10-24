@@ -1,0 +1,7 @@
+server:
+  port: 8001
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true

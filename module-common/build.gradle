@@ -1,5 +1,7 @@
 dependencies {
     // common 모듈의 모든 의존성은 root ->  build.gradle의 subprojects에서 받음
+
+    api 'org.springframework.boot:spring-boot-starter-web'
 }
 
 // common 모듈 빌드 시 단독으로 실행 가능한 jar 파일으로 만들 필요가 없음
