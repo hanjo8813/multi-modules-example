@@ -1,9 +1,0 @@
-dependencies {
-    // 공통 모듈들의 모든 의존성을 상속받고, 하위 api에 물려줌
-    api project(':module-common')
-    api project(':module-domain')
-}
-
-bootJar { enabled = false }
-
-jar { enabled = true }

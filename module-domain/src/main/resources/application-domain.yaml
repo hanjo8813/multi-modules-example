@@ -25,12 +25,9 @@
 # 배포환경
 
 #spring:
-##  config:
-##    activate:
-##      on-profile: local
-#
 #  # MySQL
 #  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
 #    url: jdbc:mysql://localhost/dummy_schema
 #    username: root
 #    password: root1234
@@ -42,3 +39,4 @@
 #    show-sql: true
 #    properties:
 #      hibernate.format_sql: true
+#    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
